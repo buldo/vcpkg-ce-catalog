@@ -1,0 +1,35 @@
+{
+  "info": {
+    "id": "raspberrypi/pico-openocd",
+    "version": "0.12.0",
+    "description": "OpenOCD from raspberry",
+    "summary": "OpenOCD from raspberry"
+  },
+  "contacts": {
+    "Roman Buldygin": {
+      "email": "froooks@gmail.com",
+      "role": [
+        "publisher"
+      ]
+    },
+    "OpenOCD (upstream)": {
+      "email": "openocd-user@lists.sourceforge.net",
+      "role": "other"
+    }
+  },
+  "demands": {
+    "windows": {
+      "install": {
+        "untar": "https://github.com/raspberrypi/openocd/releases/download/latest/openocd-34b303e47-i686-w64-mingw32.tar.gz"
+      },
+      "exports": {
+        "tools": {
+          "openocd": "bin/openocd.exe"
+        },
+        "paths": {
+          "PATH": "./bin"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+    "info": {
+        "id": "raspberrypi/pico-sdk",
+        "version": "1.4.0",
+        "description": "The Raspberry Pi Pico SDK provides the headers, libraries and build system necessary to write programs for the RP2040-based devices such as the Raspberry Pi Pico in C, C++ or assembly language.",
+        "summary": "The Raspberry Pi Pico SDK"
+    },
+    "contacts": {
+        "Roman Buldygin": {
+            "email": "froooks@gmail.com",
+            "role": "publisher"
+        }
+    },
+    "requires": {
+        "compilers/arm/gcc": "2022.11.2",
+        "tools/kitware/cmake": "3.22.5"
+    },
+    "install": {
+        "git": "https://github.com/raspberrypi/pico-sdk/",
+        "commit": "1.4.0",
+        "options": [
+            "recurse",
+            "full"
+        ]
+    },
+    "exports": {
+        "paths": {
+            "PICO_SDK_PATH": "./"
+        }
+    }
+}
