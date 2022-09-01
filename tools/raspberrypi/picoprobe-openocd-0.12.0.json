@@ -1,0 +1,35 @@
+{
+  "info": {
+    "id": "raspberrypi/pico-openocd",
+    "version": "0.12.0",
+    "description": "OpenOCD from raspberry",
+    "summary": "OpenOCD from raspberry"
+  },
+  "contacts": {
+    "Roman Buldygin": {
+      "email": "froooks@gmail.com",
+      "role": [
+        "publisher"
+      ]
+    },
+    "OpenOCD (upstream)": {
+      "email": "openocd-user@lists.sourceforge.net",
+      "role": "other"
+    }
+  },
+  "demands": {
+    "windows": {
+      "install": {
+        "unzip": "https://github.com/buldo/vcpkg-ce-catalog/releases/download/openocd-picoprobe/openocd-picoprobe.zip"
+      },
+      "exports": {
+        "tools": {
+          "openocd": "openocd.exe"
+        },
+        "paths": {
+          "PATH": "."
+        }
+      }
+    }
+  }
+}
