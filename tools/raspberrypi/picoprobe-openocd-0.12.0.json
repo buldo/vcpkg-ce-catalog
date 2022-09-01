@@ -1,6 +1,6 @@
 {
   "info": {
-    "id": "raspberrypi/pico-openocd",
+    "id": "raspberrypi/picoprobe-openocd",
     "version": "0.12.0",
     "description": "OpenOCD from raspberry",
     "summary": "OpenOCD from raspberry"
